@@ -205,3 +205,108 @@ function makeArrayConsecutive2(statues) {
     return statues_needed;
     
 }
+
+//11. Find the largest integer given a divisor and a bound 
+// ex. For divisor = 3 and bound = 10, the output should be maxMultiple(divisor, bound) = 9.
+//The largest integer divisible by 3 and not larger than 10 is 9.
+
+function maxMultiple(divisor, bound) {
+
+     var bound = bound;
+     var divisor = divisor;
+//the answer cannot be larger than bound, so i start with bound and count down until I 
+//find the integer with no remainder.      
+     
+     for(i=0; i<= bound; i++){
+          
+          if (bound % divisor !== 0){
+               bound --;
+               
+          } else {
+               return bound;
+
+          }            
+          
+     }          
+     
+}
+
+//12. Find the opposite point in a circle given the number of nodes and the 
+// point of interest
+//ex. For n = 10 and firstNumber = 2, the output should be circleOfNumbers(n, firstNumber) = 7.
+
+function circleOfNumbers(n, firstNumber) {
+    
+    var n = n;
+    var fnumber = firstNumber;
+    
+    var output = fnumber + (n/2);
+    
+    //you need the if statement because if > than n, the number will start to leave the circle
+    //instead of giving you the opposite side.
+         
+        if(output >= n){
+            
+            return output - n;
+            
+        }else {
+            
+            return output;
+        }
+    }
+    
+//13. find how many hours in minutes and then add the sum of the hours and minutes in integers
+// for a new whole number
+// ex. For n = 808, the output should be lateRide(n) = 14.
+
+function lateRide(n) {
+    
+    var n = n;
+    
+    var hours = Math.floor(n/60); 
+    var minutes = n % 60;
+    
+// hours splits
+    
+    if(hours < 10){
+        
+    var sumHours = hours;
+        
+    }else {
+    
+    var stringH = hours.toString();
+    
+    var splitH = stringH.split("");
+    
+    var number1H =  Number(splitH[0]);
+    
+    var number2H = Number(splitH[1]);
+    
+    var sumHours = number1H + number2H;
+    
+    }
+    
+// minutes spilt 
+
+    if(minutes < 10){
+        
+        var sumMins = minutes;
+        
+    }else {
+
+    var stringM = minutes.toString();
+    
+    var splitM = stringM.split("");
+    
+    var number1M =  Number(splitM[0]);
+    
+    var number2M = Number(splitM[1]);
+    
+    var sumMins = number1M + number2M;
+    
+    }
+    
+    return sumHours + sumMins;
+    
+
+}
