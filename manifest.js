@@ -310,3 +310,57 @@ function lateRide(n) {
     
 
 }
+
+
+
+//14. Find the first duplicate number in an array
+    //this looks to see if the if statement is true by verfying that all of the elements are the same
+    //if false it changes it to true so that you can continue in the array
+
+function firstDuplicate(a) {
+    var arr = [];
+    
+    
+    if (a.length === 1) return -1;
+    
+    
+    for (var i = 0; i < a.length; i++) {
+        
+        if (arr[a[i]] === true) 
+            
+            return a[i];
+        
+        
+        else arr[a[i]] = true;
+        
+    }
+    
+    return -1;
+}
+
+
+//15. Find the first non-duplicative char in the array string
+//this looks to see if the char at postsition i can be found throughout the array. If it cannot it returns, otherwise 
+// returns the required string. 
+
+function firstNotRepeatingCharacter(s) {
+    
+    let c;
+    
+    if(s.length < 2) { return s[0]; }
+    
+    for (i = 0; i < s.length; i++){     
+        
+        c = s.charAt(i);
+        
+        if (s.indexOf(c) == i && s.indexOf(c, i + 1) == -1) {
+              return c;
+            } 
+      
+    }
+    
+    return '_';
+    
+        
+    }
+    
