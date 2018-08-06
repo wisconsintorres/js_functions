@@ -1,0 +1,18 @@
+List of functions
+
+/1. Add the digits of a two-digit integer and return the sum
+//2. return the largest number for x place of 10
+//3. The total number of pieces of candy the children
+// 4. Number of people in a movie theather behind you and to the exit
+// 5. General add any 2 numbers
+// 6. get the century from the inputted year
+// 7. Check to see if the input is a Palindrome
+// 8. Find the largest product from two consecutive elements in ar array
+// 9.  find the area of a polygon for a given n
+//10. minimal number of statues that need to be added to existing 
+//11. Find the largest integer given a divisor and a bound 
+//12. Find the opposite point in a circle given the number of nodes and the 
+//13. find how many hours in minutes and then add the sum of the hours and minutes in integers
+//14. Find the first duplicate number in an array
+//15. Find the first non-duplicative char in the array string
+//16. Rotate an image 90 degrees
