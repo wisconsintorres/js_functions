@@ -364,3 +364,25 @@ function firstNotRepeatingCharacter(s) {
         
     }
     
+//16. Rotate an image 90 degrees
+//this using te arrow function expression => Flip becomes an function expression, no return needed because arrow functions auto implicate a return
+//also uses the map key 
+
+function rotateImage(a) {
+
+    
+    const flip = a => (
+    
+        a[0].map((column, index) => (
+        
+        a.map(row => row[index])
+                
+                
+                
+                ) )
+        );       
+        
+ 
+        return flip(a.reverse());   
+       
+}
